@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+  font-family: var(--fonte);
+  margin: 0;
+  top: 0;
+}
+:root {
+  /*fonte*/
+  --fonte: 'Inter', sans-serif;
+}

@@ -1,0 +1,27 @@
+.navbar-div {
+    top: 0;
+    width: 100%;
+    height: 67px;
+    position: fixed;
+    z-index: 103;
+}
+.navbar-div-img-2{
+    height: 59px;
+}
+.navbar-div-1 {
+    width: 100%;
+    display: flex;
+}
+.navbar-div-img-1{
+    height: 6px;
+    width: 100%;
+}
+.navbar-div-2 {
+    margin-left: 29px;
+    margin-right: 29px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 29px;
+}
