@@ -5,11 +5,14 @@ import passImg from '../../assets/img/lock-closed.svg'
 import edvImg from '../../assets/img/carteira-de-identidade.png'
 
 export const BoxLogin = () => {
+    function onSubmit() {
+        navigate('/home')
+    }
     return (
         <div className="box-login-div">
             <span className="box-login-login">
                 <img src={boschLogo} style={{width:'217px'}} alt="" />
-                <form action={`/home`} className="box-login-form">
+                <form onSubmit={onSubmit} className="box-login-form">
                     <span className="box-login-input-span">
                         <div className="box-login-input-user">
                             <img src={userImg} style={{width:'26px',marginRight:'12px'}} alt="" />
