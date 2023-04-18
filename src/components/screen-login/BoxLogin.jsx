@@ -3,8 +3,10 @@ import boschLogo from '../../assets/img/bosch-eco-report.png'
 import userImg from '../../assets/img/id-do-rosto.png'
 import passImg from '../../assets/img/lock-closed.svg'
 import edvImg from '../../assets/img/carteira-de-identidade.png'
+import {useNavigate } from 'react-router-dom';
 
 export const BoxLogin = () => {
+    const navigate = useNavigate()
     function onSubmit() {
         navigate('/home')
     }
