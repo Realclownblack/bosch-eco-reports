@@ -7,7 +7,23 @@
     align-items: center;
     justify-content: center;
 }
-
+.css-b62m3t-container {
+  width: 100%;
+}
+.cadastro-caixa{
+  width: 100%;
+  height: 30px;
+  /* border: 1px solid #000;
+  border-radius: 7px; */
+}
+img.button-voltar {
+  position: fixed;
+  width: 29px;
+  height: 29px;
+  top: 10%;
+  left: 28px;
+  cursor: pointer;
+}
 .box-scan-span{
   display: flex;
   flex-direction: column;
@@ -37,57 +53,85 @@
   width: 100%;
 }
 .box-scan-button{
-    height: 197px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 286px;
+  height: 197px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
-.button-scan {
+.button-65 {
+  width: 250px;
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #4C943A;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  height: 50px;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 14px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.button-65:hover {
+  background-color: #4C943A;
+  box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.button-65:hover:after {
+  opacity: .5;
+}
+
+.button-65:active {
+  box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.button-65:active:after {
+  opacity: 1;
+}
+
+
+#imgUpload::-webkit-file-upload-button {
+  visibility: hidden;
+}
+#imgUpload::before {
+content: 'Clique e selecione a imagem';
+padding: 5px 8px;
+outline: none;
+font-size: 10pt;
+}
+
+#enviar-button{
+  width: 198px;
+    height: 37px;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    background-color: #000000;
-    border: 0;
-    border-radius: 10px;
-    box-sizing: border-box;
-    color: #ffffff;
-    cursor: pointer;
-    display: inline-flex;
-    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 600;
     justify-content: center;
-    line-height: 20px;
-    max-width: 480px;
-    min-height: 40px;
-    min-width: 0px;
-    overflow: hidden;
-    padding: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
-    touch-action: manipulation;
-    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-    user-select: none;
-    -webkit-user-select: none;
-    vertical-align: middle;
-    width: 200px;
-    margin-top: 16px;
-  }
-  
-  .button-scan:hover,
-  .button-scan:focus {
-    background-color: #0c0c0c;
-    color: #ffffff;
-  }
-  
-  .button-scan:active {
-    background: #09223b;
-    color: rgb(255, 255, 255, .7);
-  }
-  
-  .button-scan:disabled {
-    cursor: not-allowed;
-    background: rgba(0, 0, 0, .08);
-    color: rgba(0, 0, 0, .3);
-  }
-  
-  
+    margin-top: 46px;
+}

@@ -25,7 +25,7 @@ export const BoxLogin = () => {
                     <span className="box-login-input-span">
                         <div className="box-login-input-user">
                             <img src={edvImg} style={{width:'30px',marginRight:'12px'}} alt="" />
-                            <input className="box-login-input" type="text" name="edvBosch" required maxlength="10" min="8" placeholder='Edv Bosch' />
+                            <input className="box-login-input" type="text" name="edvBosch" required maxlength="10" min="8" placeholder='EDV Bosch' />
                         </div>
                         <div className="box-login-input-fake"></div>
                     </span>

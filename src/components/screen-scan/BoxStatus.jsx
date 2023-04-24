@@ -1,12 +1,18 @@
 import '../../assets/css/css-scan/BoxStatus.css'
-import { useState } from 'react';
 import { Navbar } from '../universal/Navbar';
+import voltar from '../../assets/img/costas.png'
+import {useNavigate } from 'react-router-dom';
 
 export const BoxStatus = () => {
+    const navigate = useNavigate()
+    const voltarPage = () =>{
+        navigate('/home')
+    }
 
     return (
         <div className="box-status-div">
             <Navbar/>
+            <img className='button-voltar' src={voltar} alt="" onClick={voltarPage} />
             <p className='status-titulo'>Status De pedidos </p>
             <span className="box-status-span">
                 <span className="box-status">
