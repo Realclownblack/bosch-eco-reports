@@ -40,6 +40,7 @@
   height: 32px;
   border-radius: 25px;
   border: 0;
+  cursor: pointer;
 }
 .box-login-input {
   border: 0 none;
