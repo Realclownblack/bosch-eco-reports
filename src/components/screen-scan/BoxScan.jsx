@@ -52,7 +52,7 @@ export const BoxScan = () => {
     
     return (
         <div className="box-scan-div">
-             <ToastContainer />
+             {/* <ToastContainer /> */}
             <img className='button-voltar' src={voltar} alt="" onClick={voltarPage} />
          <span className="box-scan-span">
             <div className="box-scan-fotos">

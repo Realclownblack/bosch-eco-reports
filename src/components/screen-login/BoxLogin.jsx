@@ -27,7 +27,7 @@ export const BoxLogin = () => {
       };
 
 
-    const notifySuccess = () => toast.success('Report Feito Com Success', {
+    const notifySuccess = () => toast.success('Logado  Com Success', {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
