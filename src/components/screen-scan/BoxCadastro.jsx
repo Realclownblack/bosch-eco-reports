@@ -25,8 +25,8 @@ export const BoxCadastro = () => {
                 isClearable={true}
                 isSearchable={true}
                 options={options} required/> 
-                <input className="cadastro-caixa-cadastro" type="userBosch" placeholder="User name*" required />
-                <input className="cadastro-caixa-cadastro" type="EdvBosch" placeholder="User name*" required/>
+                <input className="cadastro-caixa-cadastro" type="userBosch" placeholder="User Bosch*" required />
+                <input className="cadastro-caixa-cadastro" type="EdvBosch" placeholder="EDV Bosch*" required/>
                 <input className="cadastro-caixa-cadastro" type="passwordBosch" placeholder="Password*" required/>
                 <input className="cadastro-caixa-cadastro" type="passwordReaptBosch" placeholder="Reapt Password*" required/>
                 <button  type='submit'  className="button-65" id='enviar-button'>Enviar</button>
