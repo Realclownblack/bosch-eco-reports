@@ -4,11 +4,24 @@ import comp from '../../assets/img/img.png'
 import Select from 'react-select'
 import voltar from '../../assets/img/costas.png'
 import {useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const BoxScan = () => {
     const navigate = useNavigate()
     const [image, setImage] = useState('');  
     const [endImg] = useState(comp);
+
+    const notifySuccess = () => toast.success('Report Feito Com Success', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+    });
 
     const uploadImage = async e => {
       e.preventDefault();
@@ -18,6 +31,11 @@ export const BoxScan = () => {
     }
     const voltarPage = () =>{
         navigate('/home')
+    }
+
+
+    const cadastro = () => {
+        notifySuccess()
     }
 
     const options = [
@@ -34,6 +52,7 @@ export const BoxScan = () => {
     
     return (
         <div className="box-scan-div">
+             <ToastContainer />
             <img className='button-voltar' src={voltar} alt="" onClick={voltarPage} />
          <span className="box-scan-span">
             <div className="box-scan-fotos">
@@ -47,7 +66,7 @@ export const BoxScan = () => {
                 <input className="cadastro-caixa" type="date" placeholder="Data Nacimento*" />
                 <input className="button-65" id='imgUpload'  type="file" name="image" onChange={e => setImage(e.target.files[0])}/>
             </form>
-            <button  className="button-65" id='enviar-button'>Enviar</button>
+            <button onClick={cadastro} className="button-65" id='enviar-button'>Enviar</button>
          </span>
         </div>
 

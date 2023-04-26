@@ -35,7 +35,12 @@
   flex-direction: column;
   justify-content: space-around;
 }
-
+.box-login-register{
+  width: 213px;
+  height: 32px;
+  border-radius: 25px;
+  border: 0;
+}
 .box-login-input {
   border: 0 none;
   outline: 0;

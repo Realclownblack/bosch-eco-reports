@@ -4,12 +4,29 @@ import userImg from '../../assets/img/id-do-rosto.png'
 import passImg from '../../assets/img/lock-closed.svg'
 import edvImg from '../../assets/img/carteira-de-identidade.png'
 import {useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const BoxLogin = () => {
     const navigate = useNavigate()
     function onSubmit() {
         navigate('/home')
+        notifySuccess()
     }
+    const Cadastro = () =>{
+        navigate('/cadastro-user')
+    }
+
+    const notifySuccess = () => toast.success('Report Feito Com Success', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+    });
     return (
         <div className="box-login-div">
             <span className="box-login-login">
@@ -36,6 +53,7 @@ export const BoxLogin = () => {
                         </div>
                         <div className="box-login-input-fake"></div>
                     </span>
+                    <button className='box-login-register' onClick={Cadastro}>Register</button>
                     <button type='submit' className='box-login-button'>ENTRAR</button>
                 </form>
             </span>            

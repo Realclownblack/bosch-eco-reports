@@ -1,0 +1,19 @@
+.box-cadastro-forms {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 548px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cadastro-caixa-cadastro{
+    width: 317px;
+    height: 30px;
+}
+
+.cadastro-caixa-cadastro-select{
+    width: 317px;
+    height: 30px;
+}
+

@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import { BoxStatus } from "./components/screen-scan/BoxStatus";
 import Anexar from "./pages/Anexar";
 import Arquivados from "./pages/Arquivados";
+import CadastroUser from "./pages/CadastroUser";
 
 export const RoutesJS = () => {
   return (
@@ -15,6 +16,7 @@ export const RoutesJS = () => {
         <Route path="/arquivados" element={<Arquivados />} />
         <Route path="/status" element={<BoxStatus />} />
         <Route path="/anexar" element={<Anexar />} />
+        <Route path="/cadastro-user" element={<CadastroUser />} />
       </Routes>
     </BrowserRouter>
   )
