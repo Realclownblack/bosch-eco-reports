@@ -156,6 +156,7 @@ span.box-img-1 {
   }
   span.box-login-login {
     background-color: white;
+    border: 0;
   }
   input.box-login-input {
     background-color: white;
