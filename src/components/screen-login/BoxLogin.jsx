@@ -7,7 +7,6 @@ import edvImg from '../../assets/img/carteira-de-identidade.png'
 import folha from '../../assets/img/MicrosoftTeams-image.png'
 import folha1 from '../../assets/img/MicrosoftTeams-image - Copia.png'
 import {useNavigate } from 'react-router-dom';
-import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export const BoxLogin = () => {

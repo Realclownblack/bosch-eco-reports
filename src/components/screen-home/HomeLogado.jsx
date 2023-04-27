@@ -17,7 +17,6 @@ export const HomeLogado = () => {
 
     return (
         <div className="box-home-div">
-            <ToastContainer />
             <span className="box-home-span-user">
                 <div className="box-home-span-user-div">
                     <p className='box-home-user-name'>Olá, {userName} ;)</p>
