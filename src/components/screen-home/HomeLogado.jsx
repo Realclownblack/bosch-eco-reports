@@ -2,9 +2,9 @@ import '../../assets/css/css-home/HomeLogado.css'
 import {useNavigate } from 'react-router-dom';
 import user from '../../assets/img/user.svg'
 import logoff from '../../assets/img/logout.svg'
-
-import img1 from '../../assets/img/female-working-on-laptop-green.svg'
-import img2 from '../../assets/img/male-pointing-to-something-on-flipchart-green.svg'
+import boschLogo from '../../assets/img/bosch-eco-report-ico.png'
+import img1 from '../../assets/img/female-unloading-suitcase-blue.svg'
+import img2 from '../../assets/img/male-with-folder-blue.svg'
 
 export const HomeLogado = () => {
     var userName = localStorage.getItem("userBosch");
@@ -27,13 +27,13 @@ export const HomeLogado = () => {
                 </div>
             </span>            
            <span className="box-home-span">
-                <img src={img1} alt="" style={{width:'250px'}} id='img-logado' />
+                <img src={img1} alt="" style={{width:'145px'}} id='img-logado' />
                 <span className="box-home-span-button">
                     <button onClick={() => navigate('/anexar')} className="box-home-button">Anexar novo comprovante</button>
                     <button onClick={() => navigate('/arquivados')} className="box-home-button">Comprovantes Arquivados</button>
                     <button onClick={() => navigate('/status')} className="box-home-button">Acompanhar Comprovantes Enviados</button>
                 </span>
-                <img src={img2} alt="" style={{width:'250px'}} id='img-logado'/>
+                <img src={img2} alt="" style={{width:'145px'}} id='img-logado'/>
            </span>
         </div>
 

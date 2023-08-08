@@ -1,11 +1,9 @@
 import '../../assets/css/css-login/BoxLogin.css'
 import React, { useState } from 'react';
-import boschLogo from '../../assets/img/bosch-eco-report.png'
+import boschLogo from '../../assets/img/icone.png'
 import userImg from '../../assets/img/id-do-rosto.png'
 import passImg from '../../assets/img/lock-closed.svg'
 import edvImg from '../../assets/img/carteira-de-identidade.png'
-import folha from '../../assets/img/MicrosoftTeams-image.png'
-import folha1 from '../../assets/img/MicrosoftTeams-image - Copia.png'
 import {useNavigate } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -38,15 +36,6 @@ export const BoxLogin = () => {
     });
     return (
         <div className="box-login-div">
-            <span className='box-img'>
-                <span className='box-img-1'>
-                    <img src={folha} alt="" id='img-folha'/> 
-                </span>
-                <span className='box-img-2'>
-                    <img src={folha1} alt="" id='img-folha'/> 
-                </span>
-            </span>
-
             <span className="box-login-login">
                 <img src={boschLogo} style={{width:'217px'}} alt="" />
                 <form onSubmit={onSubmit} className="box-login-form">
